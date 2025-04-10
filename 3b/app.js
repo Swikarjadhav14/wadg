@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://swikarjadhav04:swikarjadhav04@cluster0.wdbpvlk.mongodb.net/crud', {
+mongoose.connect('process.env.MONGODB_URI', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
